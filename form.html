@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/form.css" />
+    <title>Send message..</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img src="./assets/img/brandred.png" /></a>
+          </li>
+          <li><a href="/">Home</a></li>
+          <li><a href="blog.html">My Project</a></li>
+        </ul>
+        <a href="/" class="btn">Home</a>
+      </nav>
+    </header>
+    <div id="main">
+      <form action="#">
+        <div class="title">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div class="name">
+          <label for="input-name">Name: </label>
+          <input placeholder="John Doe" type="text" id="input-name" required />
+        </div>
+        <div class="email">
+          <label for="input-email" required>Email: </label>
+          <input placeholder="example@mail.com" type="email" id="input-email" />
+        </div>
+        <div class="telepon">
+          <label for="input-phone">Handphone: </label>
+          <input
+            placeholder="08777123456"
+            type="tel"
+            id="input-phone"
+            required
+          />
+        </div>
+        <div class="subject">
+          <label for="input-subject">Subject: </label>
+          <select id="input-subject" required>
+            <option value="" hidden>Select</option>
+            <option>FrontEnd</option>
+            <option>BackEnd</option>
+            <option>Fullstack</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="input-message">Your Message: </label>
+          <textarea
+            placeholder="Send Message!"
+            id="input-message"
+            cols="60"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="submit">
+          <button type="submit" class="send" onclick="ShowData()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
